@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="public/index.css">
+  <title>Direflow Project</title>
+</head>
+<body>
+  <!-- HeadlineWithCtas component -->
+  <headline-with-ctas id="headline-with-ctas-1"></headline-with-ctas>
+  <script>
+    const headlineWithCtasComponent = document.getElementById("headline-with-ctas-1");
+    headlineWithCtasComponent.title = 'Great shopping';
+    headlineWithCtasComponent.subTitle = 'Based on your needs';
+    headlineWithCtasComponent.ctas = [
+      {
+          "text" : "Shop more",
+          "url" : "https://www.google.com/search?q=shop+more"
+      },
+      {
+          "text" : "Buy now",
+          "url" : "https://www.google.com/search?q=buy+now"
+      }
+    ];
+  </script>
+
+  <!-- SimpleBanner component -->
+  <simple-banner id="simple-banner-1"></simple-banner>
+  <script>
+    const simpleBannerComponent = document.getElementById("simple-banner-1");
+    simpleBannerComponent.title = 'Experience true nature';
+    simpleBannerComponent.backgroundImage = 'https://placeimg.com/750/250/nature';
+    simpleBannerComponent.textColor = '#FFFFFF';
+  </script>
+</body>
+</html>

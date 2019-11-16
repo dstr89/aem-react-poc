@@ -1,0 +1,10 @@
+<sly data-sly-use.model="hr.strmecki.demo.models.HeadlineWithCtasModel"></sly>
+
+<headline-with-ctas id="headline-with-ctas-1"></headline-with-ctas>
+
+<script>
+    const headlineWithCtasComponent = document.getElementById("headline-with-ctas-1");
+    headlineWithCtasComponent.title = '${model.title @ context='scriptString'}';
+    headlineWithCtasComponent.subTitle = '${model.subTitle @ context='scriptString'}';
+    headlineWithCtasComponent.ctas = ${model.ctas @ context='unsafe'};
+</script>

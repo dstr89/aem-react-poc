@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/apps/settings/wcm/designs/aem-react-poc"
+        cq:lastModified="{Date}2019-11-10T17:35:31.115+01:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/aem-react-poc/templates/page-home"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="AEM-React POC"
+        sling:resourceType="aem-react-poc/components/page">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <headline_with_ctas
+                jcr:created="{Date}2019-11-10T11:07:11.697+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2019-11-10T17:33:53.019+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-react-poc/components/content/headline-with-ctas"
+                sub-title="In the world's biggest mall"
+                title="[Great shopping]">
+                <ctas jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        text="Shop more"
+                        url="#"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        text="Buy now"
+                        url="#"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        text="Save for later"
+                        url="#"/>
+                </ctas>
+            </headline_with_ctas>
+            <simple_banner
+                jcr:created="{Date}2019-11-10T11:31:33.537+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2019-11-10T17:35:31.110+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-react-poc/components/content/simple-banner"
+                background-image="https://placeimg.com/750/250/people"
+                text-color="#FFFFFF"
+                title="Connect with people"/>
+        </par>
+    </jcr:content>
+</jcr:root>

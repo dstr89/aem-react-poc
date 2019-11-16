@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/aem-react-poc"/>
+    <filter root="/apps/settings/wcm/designs/aem-react-poc"/>
+    <filter root="/content/aem-react-poc" mode="merge"/>
+</workspaceFilter>
