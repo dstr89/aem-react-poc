@@ -1,5 +1,7 @@
 package hr.strmecki.demo.models;
 
+import java.util.UUID;
+
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
@@ -22,6 +24,13 @@ public class SimpleBannerModel
     @ValueMapValue(name = "background-image")
     @Default(values = "https://placeimg.com/750/250/nature")
     private String backgroundImage;
+
+    private String id = "simple-banner-" + UUID.randomUUID();
+
+    public String getId()
+    {
+        return id;
+    }
 
     public String getTitle()
     {

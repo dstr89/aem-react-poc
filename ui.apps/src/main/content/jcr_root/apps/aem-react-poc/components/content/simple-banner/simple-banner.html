@@ -1,9 +1,9 @@
 <sly data-sly-use.model="hr.strmecki.demo.models.SimpleBannerModel"></sly>
 
-<simple-banner id="simple-banner-1"></simple-banner>
+<simple-banner id="${model.id}"></simple-banner>
 
 <script>
-    const simpleBannerComponent = document.getElementById("simple-banner-1");
+    var simpleBannerComponent = document.getElementById("${model.id @ context='unsafe'}");
     simpleBannerComponent.title = '${model.title @ context='scriptString'}';
     simpleBannerComponent.backgroundImage = '${model.backgroundImage @ context='scriptString'}';
     simpleBannerComponent.textColor = '${model.textColor @ context='scriptString'}';
