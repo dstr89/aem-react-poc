@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:EditConfig"
+          cq:actions="[edit]">
+  <cq:inplaceEditing
+    jcr:primaryType="cq:InplaceEditingConfig"
+    active="{Boolean}true"
+    configPath="inplaceEditingConfig"
+    editorType="hybrid">
+    <cq:childEditors jcr:primaryType="nt:unstructured">
+      <title jcr:primaryType="cq:ChildEditorConfig"
+                   title="Title"
+                   type="plaintext" />
+    </cq:childEditors>
+    <inplaceEditingConfig jcr:primaryType="nt:unstructured">
+      <title
+        jcr:primaryType="nt:unstructured"
+        editElementQuery=".header-title-2"
+        textPropertyName="./title" />
+    </inplaceEditingConfig>
+  </cq:inplaceEditing>
+</jcr:root>
