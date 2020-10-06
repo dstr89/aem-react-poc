@@ -2,8 +2,6 @@
 
 <simple-banner id="${model.id}"></simple-banner>
 
-<p class="header-title-2">${model.title @ context='scriptString'}</p>
-
 <script>
     var simpleBannerComponent = document.getElementById("${model.id @ context='unsafe'}");
     simpleBannerComponent.title = '${model.title @ context='scriptString'}';

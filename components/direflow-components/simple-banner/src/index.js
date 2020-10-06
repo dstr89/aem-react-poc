@@ -4,4 +4,7 @@ import SimpleBanner from './SimpleBanner';
 
 DireflowComponent.setAttributes(componentAttributes);
 DireflowComponent.setProperties(componentProperties);
-DireflowComponent.render(SimpleBanner, 'simple-banner');
+
+var option = {};
+option.shadow = false;
+DireflowComponent.render(SimpleBanner, 'simple-banner', option);

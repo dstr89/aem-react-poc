@@ -15,7 +15,7 @@
     <inplaceEditingConfig jcr:primaryType="nt:unstructured">
       <title
         jcr:primaryType="nt:unstructured"
-        editElementQuery=".header-title-2"
+        editElementQuery=".header-title"
         textPropertyName="./title" />
     </inplaceEditingConfig>
   </cq:inplaceEditing>
